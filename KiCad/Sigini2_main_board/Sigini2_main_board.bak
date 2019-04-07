@@ -1,4 +1,270 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-07 U?
+U 1 1 5CA8E4F5
+P 3900 3750
+F 0 "U?" H 3900 4728 50  0000 C CNN
+F 1 "ESP-07" H 3900 4637 50  0000 C CNN
+F 2 "RF_Module:ESP-07" H 3900 3750 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 3550 3850 50  0001 C CNN
+	1    3900 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 3250 2    50   Input ~ 0
+Device_TX
+Text GLabel 4700 3450 2    50   Input ~ 0
+Device_RX
+Wire Wire Line
+	4700 3250 4500 3250
+Wire Wire Line
+	4700 3450 4500 3450
+$Comp
+L Interface_UART:MAX232 U?
+U 1 1 5CA8E639
+P 9350 3350
+F 0 "U?" H 9350 4728 50  0000 C CNN
+F 1 "MAX232" H 9350 4637 50  0000 C CNN
+F 2 "" H 9400 2300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 9350 3450 50  0001 C CNN
+	1    9350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA8E6C3
+P 3100 5400
+F 0 "#PWR?" H 3100 5150 50  0001 C CNN
+F 1 "GND" H 3105 5227 50  0000 C CNN
+F 2 "" H 3100 5400 50  0001 C CNN
+F 3 "" H 3100 5400 50  0001 C CNN
+	1    3100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CA8E73B
+P 3800 5400
+F 0 "#PWR?" H 3800 5250 50  0001 C CNN
+F 1 "+3.3V" H 3815 5573 50  0000 C CNN
+F 2 "" H 3800 5400 50  0001 C CNN
+F 3 "" H 3800 5400 50  0001 C CNN
+	1    3800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CA8EB1E
+P 4300 5200
+F 0 "C?" H 4415 5246 50  0000 L CNN
+F 1 "C" H 4415 5155 50  0000 L CNN
+F 2 "" H 4338 5050 50  0001 C CNN
+F 3 "~" H 4300 5200 50  0001 C CNN
+	1    4300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5CA8EC4A
+P 3150 3950
+F 0 "C?" H 3268 3996 50  0000 L CNN
+F 1 "CP" H 3268 3905 50  0000 L CNN
+F 2 "" H 3188 3800 50  0001 C CNN
+F 3 "~" H 3150 3950 50  0001 C CNN
+	1    3150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Male_MountingHoles J?
+U 1 1 5CA90FFF
+P 2050 1850
+F 0 "J?" H 2229 1853 50  0000 L CNN
+F 1 "DB9_Male_MountingHoles" H 2229 1762 50  0000 L CNN
+F 2 "" H 2050 1850 50  0001 C CNN
+F 3 " ~" H 2050 1850 50  0001 C CNN
+	1    2050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA9129D
+P 3900 4650
+F 0 "#PWR?" H 3900 4400 50  0001 C CNN
+F 1 "GND" H 3905 4477 50  0000 C CNN
+F 2 "" H 3900 4650 50  0001 C CNN
+F 3 "" H 3900 4650 50  0001 C CNN
+	1    3900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4650 3900 4450
+$Comp
+L Device:R R?
+U 1 1 5CA9133F
+P 5250 5450
+F 0 "R?" H 5320 5496 50  0000 L CNN
+F 1 "R" H 5320 5405 50  0000 L CNN
+F 2 "" V 5180 5450 50  0001 C CNN
+F 3 "~" H 5250 5450 50  0001 C CNN
+	1    5250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CA913DB
+P 4700 4350
+F 0 "R?" H 4770 4396 50  0000 L CNN
+F 1 "10k" H 4770 4305 50  0000 L CNN
+F 2 "" V 4630 4350 50  0001 C CNN
+F 3 "~" H 4700 4350 50  0001 C CNN
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 4150
+NoConn ~ 4500 3950
+NoConn ~ 4500 3850
+NoConn ~ 4500 3750
+NoConn ~ 4500 3650
+NoConn ~ 4500 3550
+$Comp
+L Device:R R?
+U 1 1 5CA91491
+P 5350 2900
+F 0 "R?" H 5420 2946 50  0000 L CNN
+F 1 "10k" H 5420 2855 50  0000 L CNN
+F 2 "" V 5280 2900 50  0001 C CNN
+F 3 "~" H 5350 2900 50  0001 C CNN
+	1    5350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3050 5350 3350
+Wire Wire Line
+	5350 3350 4500 3350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CA915AF
+P 5350 2600
+F 0 "#PWR?" H 5350 2450 50  0001 C CNN
+F 1 "+3.3V" H 5365 2773 50  0000 C CNN
+F 2 "" H 5350 2600 50  0001 C CNN
+F 3 "" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2750 5350 2600
+Wire Wire Line
+	4500 4050 4700 4050
+Wire Wire Line
+	4700 4050 4700 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5CA916FE
+P 4700 4700
+F 0 "#PWR?" H 4700 4450 50  0001 C CNN
+F 1 "GND" H 4705 4527 50  0000 C CNN
+F 2 "" H 4700 4700 50  0001 C CNN
+F 3 "" H 4700 4700 50  0001 C CNN
+	1    4700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4500 4700 4700
+$Comp
+L Device:R R?
+U 1 1 5CA91798
+P 3150 2850
+F 0 "R?" H 3220 2896 50  0000 L CNN
+F 1 "R" H 3220 2805 50  0000 L CNN
+F 2 "" V 3080 2850 50  0001 C CNN
+F 3 "~" H 3150 2850 50  0001 C CNN
+	1    3150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3150 3150 3150
+Wire Wire Line
+	3150 3150 3150 3000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CA918E2
+P 3150 2500
+F 0 "#PWR?" H 3150 2350 50  0001 C CNN
+F 1 "+3.3V" H 3165 2673 50  0000 C CNN
+F 2 "" H 3150 2500 50  0001 C CNN
+F 3 "" H 3150 2500 50  0001 C CNN
+	1    3150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2700 3150 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5CA919D3
+P 3150 4350
+F 0 "#PWR?" H 3150 4100 50  0001 C CNN
+F 1 "GND" H 3155 4177 50  0000 C CNN
+F 2 "" H 3150 4350 50  0001 C CNN
+F 3 "" H 3150 4350 50  0001 C CNN
+	1    3150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4350 3150 4200
+Wire Wire Line
+	3150 3800 3150 3500
+Connection ~ 3150 3150
+$Comp
+L Switch:SW_Push_Dual SW?
+U 1 1 5CA91E2E
+P 2550 3900
+F 0 "SW?" H 2550 4185 50  0000 C CNN
+F 1 "SW_Push_Dual" H 2550 4094 50  0000 C CNN
+F 2 "" H 2550 4100 50  0001 C CNN
+F 3 "" H 2550 4100 50  0001 C CNN
+	1    2550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4100 2850 4100
+Wire Wire Line
+	2850 4100 2850 3900
+Wire Wire Line
+	2850 3900 2750 3900
+Wire Wire Line
+	2350 3900 2250 3900
+Wire Wire Line
+	2250 3900 2250 4100
+Wire Wire Line
+	2250 4100 2350 4100
+Wire Wire Line
+	3150 4200 2850 4200
+Wire Wire Line
+	2850 4200 2850 4100
+Connection ~ 3150 4200
+Wire Wire Line
+	3150 4200 3150 4100
+Connection ~ 2850 4100
+Wire Wire Line
+	2250 3900 2250 3500
+Wire Wire Line
+	2250 3500 3150 3500
+Connection ~ 2250 3900
+Connection ~ 3150 3500
+Wire Wire Line
+	3150 3500 3150 3150
 $EndSCHEMATC
